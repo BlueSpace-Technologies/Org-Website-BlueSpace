@@ -11,7 +11,7 @@
         "migration:push": "node -r esbuild-register ./src/db/migrate.ts"
     },
     "dependencies": {
-        "@radix-ui/react-avatar": "^1.0.3",
+        "@radix-ui/react-avatar": "^1.0.4",
         "@types/node": "20.4.4",
         "@types/react": "18.2.15",
         "@types/react-dom": "18.2.7",
