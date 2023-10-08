@@ -9,7 +9,7 @@ import Gettoknow from "@/components/hero-section/Gettoknow";
 export default function Home() {
   return (
     <main className="overflow-hidden">
-      <div className="padding-x padding-y">
+      <div className="padding-x padding-y bg-black">
         <HeroSection />
       </div>
       <Gettoknow/>

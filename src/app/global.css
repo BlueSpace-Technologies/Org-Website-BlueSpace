@@ -10,6 +10,20 @@
   box-sizing: border-box;
   font-family: "Manrope", sans-serif;
 }
+/* styles.css *//* styles.css */
+.your-custom-bg {
+  background-image: url('https://img.freepik.com/free-photo/dark-grunge-style-scratched-metal-surface_1048-12951.jpg?w=1380&t=st=1696754434~exp=1696755034~hmac=d687c82a520ac571755f1b72ccf9f4872dd01227c2b07385702035f5b3e540a2');
+  background-size: cover; /* Make the image cover the entire element */
+  background-position: center; /* Center the image within the element */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent black background color */
+  /* You can add more background properties as needed */
+  color: #fff; /* Text color */
+  padding: 20px; /* Padding for the content within the element */
+  /* Add any other properties you need */
+}
+
+
 
 /* START: General styles */
 .max-width {
@@ -21,7 +35,7 @@
 }
 
 .padding-y {
-  @apply py-4;
+  @apply py-10;
 }
 
 .flex-center {

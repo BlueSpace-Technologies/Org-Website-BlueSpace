@@ -1,57 +1,24 @@
-"use client"
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import Image from "next/image";
+import ImageSlider from "./imagesscroll";
 
 const Gettoknows = () => {
-  const containerRef = useRef(null);
-
-  useEffect(() => {
-    const container = containerRef.current as HTMLDivElement | null;
-
-    if (container) {
-      let scrollInterval: string | number | NodeJS.Timer | undefined;
-      let isScrolling = false;
-
-      const startScroll = () => {
-        scrollInterval = setInterval(() => {
-          if (container.scrollLeft !== undefined) {
-            container.scrollLeft += 1; // Adjust the scroll speed here
-          }
-        }, 30); // Adjust the scroll interval here
-      };
-
-      const stopScroll = () => {
-        clearInterval(scrollInterval);
-      };
-
-      container.addEventListener &&
-        container.addEventListener("mouseenter", () => {
-          if (!isScrolling) {
-            startScroll();
-            isScrolling = true;
-          }
-        });
-
-      container.addEventListener &&
-        container.addEventListener("mouseleave", () => {
-          stopScroll();
-          isScrolling = false;
-        });
-    }
-  }, []);
-
   return (
-    <section className="bg-gray-200 py-24 p-24 flex flex-row">
-      <div className="text-start md:text-left px-6 md:px-12">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-8 sm:mb-12 md:mb-16">
+    <main>
+    <section className="bg-gradient-to-r from-indigo-500 to-purple-600 py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-8 md:px-16">
+      <div className="container mx-auto text-center md:text-left">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4 sm:mb-6 md:mb-8 lg:mb-10">
           We Transform Companies <br /> Through Design Innovation
         </h1>
-        <p className="text-lg sm:text-xl text-white">
+        <p className="text-base sm:text-lg md:text-xl text-white">
           A full-service creative agency designing and building inventive
           digital experiences across all platforms and brand touchpoints.
         </p>
+       
       </div>
     </section>
+    <ImageSlider/>
+    </main>
   );
 };
 
