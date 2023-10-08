@@ -5,6 +5,7 @@ import VideoHeri from "./VideoHeri";
 import HeroAbout from "./HeroAbout";
 import ImageSection from "./Imagesection";
 import WorkShowcase from "./Workshowcase";
+import FAQS from "./faq";
 
 const HeroSection = () => {
   return (
@@ -26,6 +27,7 @@ const HeroSection = () => {
         </div>
       </div>
       <WorkShowcase />
+      <FAQS/>
     </main>
   );
 };

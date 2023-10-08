@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import ImageSlider from "./imagesscroll";
+import FAQS from "./faq";
 
 const Gettoknows = () => {
   return (
@@ -18,6 +19,13 @@ const Gettoknows = () => {
       </div>
     </section>
     <ImageSlider/>
+    <div className="p-4 md:p-6 lg:p-8 xl:p-10">
+  <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-start text-gray-800 dark:text-white font-semibold leading-tight">
+    Our cross-disciplinary team integrates branding, UX design, and technology to achieve swift and impactful results through direct leadership from the co-founders and close collaboration with our clients.
+  </h1>
+</div>
+
+
     </main>
   );
 };

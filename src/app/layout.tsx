@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./global.css";
 import Navbar from "@/components/NavBar/Navbar";
+import Footer from "@/components/footer/footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["cyrillic-ext"] });
 
 export const metadata: Metadata = {
   title: "BlueSpace Tech",
@@ -20,7 +21,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar/>
-        {children}</body>
+        {children}
+        <Footer/>
+        </body>
+
     </html>
   );
 }
