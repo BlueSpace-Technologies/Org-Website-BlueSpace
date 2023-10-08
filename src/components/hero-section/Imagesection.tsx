@@ -38,8 +38,8 @@ const ImageSection = () => {
           >
             <img
               src="logo.png"
-              height={500} // Adjust the height for larger images
-              width={500} // Adjust the width for larger images
+              height={500} 
+              width={500} 
               alt={`Image ${index + 1}`}
               className="rounded-lg"
             />

@@ -10,9 +10,10 @@ import FAQS from "./faq";
 const HeroSection = () => {
   return (
     <main className="bg-black">
-      <section className=" flex flex-col items-start p-5 sm:p-10 mt-10 bg-black">
-        <h1 className=" font-unisans font-bold text-white text-3xl sm:text-4xl lg:text-7xl text-start">
-          BlueSpace is a Tech branding and UX UI design agency
+      <section className=" flex flex-col items-start p-5 sm:p-10 bg-black">
+        <h1 className=" space-x-1 font-unisans font-bold text-white text-3xl sm:text-4xl  lg:text-7xl mt-0 text-start">
+          BlueSpace is a Tech branding 
+          and UX UI design agency
         </h1>
       </section>
       <VideoHeri />
