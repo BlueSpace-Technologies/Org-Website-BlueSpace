@@ -15,19 +15,19 @@ const HeroSection = () => {
           BlueSpace is a Tech branding and UX UI design agency
         </h1>
       </section>
-
       <VideoHeri />
+
       <HeroAbout />
 
-      <div className="flex justify-center text-[35px] items-center transform hover:scale-105 transition-transform sm:px-4 md:px-8 lg:px-12 xl:px-16">
+      <div className="flex justify-center text-3xl sm:text-4xl md:text-5xl lg:text-3xl items-center transform hover:scale-105 transition-transform px-4 sm:px-8 md:px-12 xl:px-16">
         <div className="">
-          <h3 className="text-white underline text-center sm:text-left">
+          <h3 className="text-white underline text-center sm:text-left font-bold">
             View all Clients
           </h3>
         </div>
       </div>
+
       <WorkShowcase />
-      <FAQS/>
     </main>
   );
 };

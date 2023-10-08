@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/20/solid";
 
@@ -15,39 +15,26 @@ const DisclosureItem: React.FC<DisclosureItemProps> = ({
   isOpen,
   toggleDisclosure,
 }) => {
-  const disclosureRef = useRef<HTMLDivElement | null>(null);
-
-  const handleToggle = () => {
-    toggleDisclosure();
-    // Scroll to the disclosure item when it's opened
-    if (disclosureRef.current && isOpen) {
-      disclosureRef.current.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  };
-
   return (
-    <div className="mb-4 relative" ref={disclosureRef}>
+    <div className="mb-4">
       <Disclosure.Button
-        onClick={handleToggle}
-        className={`flex items-center justify-between w-full px-4 py-3 text-lg md:text-xl lg:text-2xl font-medium text-white bg-black rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-opacity-75 transition duration-300 ease-in-out`}
+        onClick={toggleDisclosure}
+        className="flex items-center justify-between w-full px-4 py-3 text-lg font-medium text-white bg-black rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-opacity-75 transition duration-300 ease-in-out"
       >
         <span className="text-left">{title}</span>
         <ChevronUpIcon
           className={`${
             isOpen ? "transform rotate-180" : ""
-          } h-4 md:h-5 lg:h-6 w-4 md:w-5 lg:w-6 text-white transition-transform duration-300 ease-in-out`}
+          } h-4 w-4 text-white transition-transform duration-300 ease-in-out`}
         />
       </Disclosure.Button>
-      <div
+      <Disclosure.Panel
         className={`${
           isOpen ? "block" : "hidden"
-        } bg-black px-4 pt-3 pb-4 text-sm md:text-base lg:text-lg text-white border-t border-white rounded-b-lg transition-opacity duration-300 ease-in-out`}
+        } bg-black px-4 pt-3 pb-4 text-sm text-white border-t border-white rounded-b-lg transition-opacity duration-300 ease-in-out`}
       >
         {content}
-      </div>
+      </Disclosure.Panel>
     </div>
   );
 };
@@ -78,19 +65,20 @@ const HeroAbout: React.FC = () => {
   };
 
   return (
-    <section className="bg-black py-12 md:py-24 lg:py-36 xl:py-48 flex flex-col md:flex-row justify-between items-center relative">
+    <main className="bg-black py-8 md:py-16 lg:py-24 xl:py-32 flex flex-col md:flex-row justify-center items-center relative">
       <div className="md:w-1/2 md:px-12 lg:px-24 xl:px-32 text-white">
-        <h1 className="text-2xl md:text-5xl lg:text-6xl xl:text-6xl font-semibold leading-tight">
+        <h1 className="text-2xl text-ellipsis md:text-4xl lg:text-3xl xl:text-4xl font-semibold font-unisans mb-4">
           Based in Mumbai, we strengthen brands through exceptional digital
           experiences for companies worldwide.
         </h1>
-        <p className="text-gray-300 text-lg md:text-2xl mt-4">
+        <p className="text-gray-300 text-base md:text-lg">
           We are a team of strategists, designers, and developers creating
           memorable digital brand experiences that grow businesses.
         </p>
       </div>
+ =
       <div className="w-full md:w-1/2 px-4 mt-8 md:mt-0">
-        <div className="mx-auto w-full max-w-md rounded-xl p-4 text-black">
+        <div className="mx-auto w-full max-w-md rounded-xl p-4 bg-black">
           {disclosures.map((item, index) => (
             <Disclosure key={index}>
               {({ open }) => (
@@ -107,7 +95,11 @@ const HeroAbout: React.FC = () => {
           ))}
         </div>
       </div>
-    </section>
+      
+      
+      
+      
+    </main>
   );
 };
 
