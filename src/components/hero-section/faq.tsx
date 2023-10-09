@@ -1,95 +1,116 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
+import { Disclosure } from "@headlessui/react";
+import { ChevronUpIcon } from "@heroicons/react/20/solid";
+import { motion } from "framer-motion";
 
-interface FaqItemProps {
-  question: string;
-  answer: string;
+// Define your DisclosureItem component with TypeScript
+interface DisclosureItemProps {
+  title: string;
+  content: string;
+  isOpen: boolean;
+  toggleDisclosure: () => void;
 }
 
-const FaqItem: React.FC<FaqItemProps> = ({ question, answer }) => (
-  <div className="mb-10">
-    <h3 className="flex items-center mb-4 text-lg font-medium text-white dark:text-white">
-      <svg
-        className="flex-shrink-0 mr-2 w-5 h-5 text-white dark:text-gray-400"
-        fill="currentColor"
-        viewBox="0 0 20 20"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          fillRule="evenodd"
-          d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
-          clipRule="evenodd"
-        ></path>
-      </svg>
-      {question}
-    </h3>
-    <p className="text-white dark:text-gray-400">{answer}</p>
-  </div>
-);
-
-const FAQS: React.FC = () => {
-  const faqItems: FaqItemProps[] = [
-    {
-      question: 'What do you mean by "Figma assets"?',
-      answer:
-        'You will have access to download the full Figma project including all of the pages, the components, responsive pages, and also the icons, illustrations, and images included in the screens.',
-    },
-    {
-      question: 'What do you mean by "Figma assets"?',
-      answer:
-        'You will have access to download the full Figma project including all of the pages, the components, responsive pages, and also the icons, illustrations, and images included in the screens.',
-    },
-    {
-      question: 'What do you mean by "Figma assets"?',
-      answer:
-        'You will have access to download the full Figma project including all of the pages, the components, responsive pages, and also the icons, illustrations, and images included in the screens.',
-    },
-    {
-      question: 'What do you mean by "Figma assets"?',
-      answer:
-        'You will have access to download the full Figma project including all of the pages, the components, responsive pages, and also the icons, illustrations, and images included in the screens.',
-    },
-    {
-      question: 'What do you mean by "Figma assets"?',
-      answer:
-        'You will have access to download the full Figma project including all of the pages, the components, responsive pages, and also the icons, illustrations, and images included in the screens.',
-    },
-    {
-      question: 'What do you mean by "Figma assets"?',
-      answer:
-        'You will have access to download the full Figma project including all of the pages, the components, responsive pages, and also the icons, illustrations, and images included in the screens.',
-    },
-    {
-      question: 'What do you mean by "Figma assets"?',
-      answer:
-        'You will have access to download the full Figma project including all of the pages, the components, responsive pages, and also the icons, illustrations, and images included in the screens.',
-    },
-    {
-      question: 'What do you mean by "Figma assets"?',
-      answer:
-        'You will have access to download the full Figma project including all of the pages, the components, responsive pages, and also the icons, illustrations, and images included in the screens.',
-    },
-
-    // ... (other FAQ items)
-  ];
-
+const DisclosureItem: React.FC<DisclosureItemProps> = ({
+  title,
+  content,
+  isOpen,
+  toggleDisclosure,
+}) => {
   return (
-    <section className="bg-black dark:bg-gray-900 w-full">
-      <div className="py-8 px-4 mx-auto max-w-screen-2xl sm:py-16 lg:padding-x padding-y">
-        <h2 className="mb-8 text-4xl tracking-tight font-extrabold text-white dark:text-white">
-          Frequently asked questions
-        </h2>
-        <div className="grid pt-8 text-left border-t border-gray-200 md:gap-16 dark:border-gray-700 md:grid-cols-2">
-          {faqItems.map((item, index) => (
-            <FaqItem
-              key={index}
-              question={item.question}
-              answer={item.answer}
-            />
-          ))}
-        </div>
-      </div>
-    </section>
+    <div className="overflow-hidden py-2 sm:py-7 underline border-collapse">
+      <Disclosure.Button
+  onClick={toggleDisclosure}
+  className="flex items-center justify-between w-full  py-3 text-xl font-unisans text-white bg-black rounded-lg  focus-visible:ring focus-visible:ring-white focus-visible:ring-opacity-75 transition duration-300 ease-in-out"
+>
+  <span className="text-start font-bold sm:text-1xl lg:text-4xl justify-between">{title}</span>
+  <ChevronUpIcon
+    className={`${
+      isOpen ? "transform rotate-180 " : ""
+    } lg:h-10 w-10  item-left sm:h-auto  text-white transition-transform duration-300 ease-in-out`}
+  />
+</Disclosure.Button>
+<Disclosure.Panel
+  className={`${
+    isOpen ? "block " : "hidden"
+  } bg-black text-xl text-white  rounded-b-lg transition-opacity duration-300 ease-in-out`}
+>
+  {content}
+</Disclosure.Panel>
+
+    </div>
   );
 };
 
-export default FAQS;
+const HeroAbout: React.FC = () => {
+  const disclosures = [
+  
+        {
+          "question": "What are your core services as a UX design and branding firm?",
+          "answer": "At Clay, user experience is not just a capability but the cornerstone of our approach. We first began as a UX design agency in San Francisco, focusing on mobile apps and enterprise/SaaS software.However, our passion for branding and the demand from our clients led us to expand our offering to provide full-service brand design practice and web design and development of marketing websites.Today, our projects encompass a wide range, from building new products and defining brands to revitalizing existing mobile apps, websites, and enterprise software. We specialize in crafting digital products that wholeheartedly embody the brand's personality and deliver delightful experiences to your customers.."
+        },
+        {
+          "question": "Why do we use it?",
+          "answer": "It is a long-established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+        },
+        {
+          "question": "Where does it come from?",
+          "answer": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature."
+        },
+        {
+          "question": "Is it safe to use?",
+          "answer": "Yes, Lorem Ipsum is safe to use in design and typesetting."
+        },
+        {
+          "question": "How can I use Lorem Ipsum?",
+          "answer": "You can use Lorem Ipsum as placeholder text in your designs and layouts."
+        }
+   
+    
+  ];
+
+  const [openDisclosure, setOpenDisclosure] = useState(
+    new Array(disclosures.length).fill(false)
+  );
+
+  const toggleDisclosure = (index: number) => {
+    const updatedOpenDisclosure = [...openDisclosure];
+    updatedOpenDisclosure[index] = !updatedOpenDisclosure[index];
+    setOpenDisclosure(updatedOpenDisclosure);
+  };
+
+  return (
+    
+    <div className="bg-black py-5 lg:p-28">
+      
+    <div className="bg-black h-full w-full p-4 lg:p-8 py-2">
+    <h1 className="text-2xl font-unisans font-bold text-white lg:text-6xl">
+        FAQ
+      </h1>
+      {disclosures.map((item, index) => (
+        <Disclosure key={index}>
+          {({ open }) => (
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <DisclosureItem
+                title={item.question}
+                content={item.answer}
+                isOpen={open && openDisclosure[index]}
+                toggleDisclosure={() => toggleDisclosure(index)}
+              />
+            </motion.div>
+          )}
+        </Disclosure>
+      ))}
+    </div>
+  </div>
+  
+   
+  );
+};
+
+export default HeroAbout;

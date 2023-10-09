@@ -3,87 +3,73 @@ import Image from "next/image";
 
 const WorkShowcase = () => {
   return (
-    <section className="p-4">
-      <h2 className="text-2xl font-bold mb-4">Work Showcase</h2>
+    <section className="py-8 px-4 bg-black">
       <div className="flex flex-wrap -mx-4">
-        {/* Row 1 */}
-        <div className="w-full lg:w-1/2 xl:w-1/2 px-4 mb-4">
-          <a>
-            <div className="relative group p-4 rounded-lg">
+        {/* Big Project */}
+        <div className="w-full lg:w-2/3 px-4 mb-4 order-2 lg:order-1 ">
+          <div className="rounded-lg bg-white overflow-hidden shadow-lg">
+            <a>
               <video
                 poster="https://cdn.sanity.io/images/r115idoc/production/3b4132739409b27731583066a5ea88091a7b4935-1700x954.png?q=90&auto=format"
-                className="transform scale-80 hover:scale-100 transition-transform duration-500 ease-in-out"
+                className="w-full hover:scale-105 transform transition-transform duration-300 ease-in-out"
                 autoPlay
                 loop
                 muted
               >
                 <source src="hero.mp4" type="video/mp4" />
               </video>
+            </a>
+            <div className="p-4">
+              <h3 className="text-xl font-semibold text-gray-800">Big Project</h3>
+              <p className="text-gray-600">Description for Big Project.</p>
             </div>
-          </a>
-          <h3 className="text-lg font-bold mb-2 text-white">Project 1</h3>
-          <p className="text-white">Description for Project 1.</p>
-        </div>
-        <div className="w-full lg:w-1/2 xl:w-3/4 px-4 mb-4">
-          {/* Second Showcase */}
-          <a>
-            <div className="relative group  p-4 rounded-lg">
-              <video
-                poster="https://cdn.sanity.io/images/r115idoc/production/3b4132739409b27731583066a5ea88091a7b4935-1700x954.png?q=90&auto=format"
-                className="transform scale-80 hover:scale-100 transition-transform duration-500 ease-in-out"
-                autoPlay
-                loop
-                muted
-               
-              >
-                <source src="hero.mp4" type="video/mp4" />
-              </video>
-            </div>
-          </a>
-          <h3 className="text-lg font-bold mb-2">Project 2</h3>
-          <p className="text-gray-600">Description for Project 2.</p>
+          </div>
         </div>
 
-        {/* Row 2 */}
-        <div className="w-full lg:w-3/4 xl:w-1/4 px-4 mb-4">
+        {/* Medium Project */}
+        <div className="w-full lg:w-1/3 px-4 mb-4 order-1 lg:order-2">
+          <div className="rounded-lg bg-white overflow-hidden shadow-lg">
+            <a>
+              <video
+                poster="https://cdn.sanity.io/images/r115idoc/production/3b4132739409b27731583066a5ea88091a7b4935-1700x954.png?q=90&auto=format"
+                className="w-full hover:scale-105 transform transition-transform duration-300 ease-in-out"
+                autoPlay
+                loop
+                muted
+              >
+                <source src="hero.mp4" type="video/mp4" />
+              </video>
+            </a>
+            <div className="p-4">
+              <h3 className="text-xl font-semibold text-gray-800">Medium Project</h3>
+              <p className="text-gray-600">Description for Medium Project.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Other Projects */}
+        <div className="w-full lg:w-1/3 px-4 mb-4">
           {/* Third Showcase */}
-          <a>
-            <div className="relative group  p-4 rounded-lg">
+          <div className="rounded-lg bg-white overflow-hidden shadow-lg">
+            <a>
               <video
                 poster="https://cdn.sanity.io/images/r115idoc/production/3b4132739409b27731583066a5ea88091a7b4935-1700x954.png?q=90&auto=format"
-                className="transform scale-80 hover:scale-100 transition-transform duration-500 ease-in-out"
-                autoPlay
-                loop
-                muted
-              
-              >
-                <source src="hero.mp4" type="video/mp4" />
-              </video>
-            </div>
-          </a>
-          <h3 className="text-lg font-bold mb-2">Project 3</h3>
-          <p className="text-gray-600">Description for Project 3.</p>
-        </div>
-        <div className="w-full lg:w-1/4 xl:w-3/4 px-4 mb-4">
-          {/* Fourth Showcase */}
-          <a>
-            <div className="relative group  p-4 rounded-lg">
-              <video
-                poster="https://cdn.sanity.io/images/r115idoc/production/3b4132739409b27731583066a5ea88091a7b4935-1700x954.png?q=90&auto=format"
-                className="transform scale-80 hover:scale-100 transition-transform duration-500 ease-in-out"
+                className="w-full hover:scale-105 transform transition-transform duration-300 ease-in-out"
                 autoPlay
                 loop
                 muted
               >
                 <source src="hero.mp4" type="video/mp4" />
               </video>
+            </a>
+            <div className="p-4">
+              <h3 className="text-xl font-semibold text-gray-800">Project 3</h3>
+              <p className="text-gray-600">Description for Project 3.</p>
             </div>
-          </a>
-          <h3 className="text-lg font-bold mb-2">Project 4</h3>
-          <p className="text-gray-600">Description for Project 4.</p>
+          </div>
         </div>
 
-        {/* Add more rows and showcases as needed */}
+        {/* Add more projects as needed */}
       </div>
     </section>
   );

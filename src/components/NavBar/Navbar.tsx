@@ -39,14 +39,14 @@ const Nav = () => {
       transition: {
         type: "tween",
         ease: "easeOut",
-        duration: 1, // Adjust the duration as needed
+        duration: 1,
       },
     },
   };
   return (
     <header className="bg-black">
-      <nav className=" lg:padding-x padding-y lg:py-8 px-20 flex justify-between items-center">
-        <div className="flex items-center space-x-2">
+      <nav className=" flex justify-between p-5 items-start lg:p-8 bg-black sm:p-4">
+        <div className="flex items-center space-x-2 sm:p-2  lg:p-0">
           <a href="/">
             <img src="logo.png" alt="logo" className="w-20 h-20" />
           </a>
@@ -54,7 +54,7 @@ const Nav = () => {
             BlueSpace
           </span>
         </div>
-        <ul className="hidden gap-8 lg:flex">
+        <ul className="hidden gap-14 p-8 lg:flex">
           {navLinks.map((item) => (
             <li key={item.label}>
               <a
@@ -67,7 +67,7 @@ const Nav = () => {
           ))}
         </ul>
 
-        <div className="lg:hidden cursor-pointer" onClick={toggleMobileMenu}>
+        <div className="lg:hidden cursor-pointer py-4" onClick={toggleMobileMenu}>
           {mobileMenuOpen ? (
             <FaTimes className="text-white text-3xl" />
           ) : (

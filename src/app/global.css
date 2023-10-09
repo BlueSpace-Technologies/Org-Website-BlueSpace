@@ -23,6 +23,20 @@
   /* Add any other properties you need */
 }
 
+/* components/HorizontalImageScroll.module.css */
+
+.horizontalScroll {
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+}
+
+.horizontalScroll::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome/Safari/Opera */
+}
+
+
 
 
 
