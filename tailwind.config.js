@@ -16,6 +16,10 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        'unisans': ['UniversalSans-740-Headlines', 'Arial', 'sans-serif'],
+        'poppins': ['Poppins', 'sans'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
