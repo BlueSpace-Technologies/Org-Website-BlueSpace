@@ -1,6 +1,5 @@
 import Avatar from "@/components/ui/avatar";
 
-import Navbar from "@/components/NavBar/Navbar";
 import HeroSection from "@/components/hero-section/HeroSection";
 import Gettoknow from "@/components/hero-section/Gettoknow";
 import FAQS from "@/components/hero-section/faq";
@@ -9,7 +8,7 @@ import DefaultCarousel from "@/components/hero-section/imagesscroll";
 
 export default function Home() {
   return (
-    <main className="overflow-hidden">
+    <main className="overflow-hidden bg-black">
       <div className="bg-black">
         <HeroSection />
       </div>
