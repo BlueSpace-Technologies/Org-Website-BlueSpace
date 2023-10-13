@@ -65,40 +65,39 @@ export const Header = () => {
 
   return (
     <Headroom style={{ zIndex: 50 }}>
-    <header className="relative z-50 py-8 backdrop-blur-md bg-black">
-      <Container>
-      <div className="flex justify-between items-center">
-        <Logo />
-        <div className="flex items-center">
-          <nav className="hidden md:block">
-            <ul className="flex gap-12 text-lg">
-              {navItems.map(({ href, title }, i) => (
-                <NavigationItem
-                  href={href}
-                  title={title}
-                  key={href}
-                  variants={navigationVariants}
-                  initial="hidden"
-                  animate="visible"
-                  customDelay={(i + 1) * 0.1}
-                />
-              ))}
-            </ul>
-          </nav>
-        </div>
-        <button
-          className="right-4 top-8 z-50 md:hidden"
-          onClick={() => setIsOpen((prev) => !prev)}
-          aria-label="Menu"
-        >
-          <BurgerIcon isOpen={isOpen} />
-        </button>
-      </div>
-      </Container>
-    </header>
-  
-    <MobileMenu isOpen={isOpen} />
-  </Headroom>
-  
+      <header className="relative z-50 py-8 backdrop-blur-md bg-black">
+        <Container>
+          <div className="flex justify-between items-center">
+            <Logo />
+            <div className="flex items-center">
+              <nav className="hidden md:block">
+                <ul className="flex gap-12 text-lg">
+                  {navItems.map(({ href, title }, i) => (
+                    <NavigationItem
+                      href={href}
+                      title={title}
+                      key={href}
+                      variants={navigationVariants}
+                      initial="hidden"
+                      animate="visible"
+                      customDelay={(i + 1) * 0.1}
+                    />
+                  ))}
+                </ul>
+              </nav>
+            </div>
+            <button
+              className="right-4 top-8 z-50 md:hidden"
+              onClick={() => setIsOpen((prev) => !prev)}
+              aria-label="Menu"
+            >
+              <BurgerIcon isOpen={isOpen} />
+            </button>
+          </div>
+        </Container>
+      </header>
+
+      <MobileMenu isOpen={isOpen} />
+    </Headroom>
   );
 };

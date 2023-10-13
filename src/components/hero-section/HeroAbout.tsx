@@ -90,7 +90,7 @@ const HeroAbout: React.FC = () => {
       className="flex flex-col md:flex-row mt-32"
     >
       <div className="md:w-1/2 md:px-12 lg:px-24 xl:px-32 text-white ">
-        <h1 className="text-2xl py-5 p-5 font-semibold font-unisans mb-4 sm:text-1xl lg:text-3xl">
+        <h1 className="text-2xl py-5 font-semibold font-unisans mb-4 sm:text-1xl lg:text-3xl">
           Based in Mumbai, we strengthen brands through exceptional digital
           experiences for companies worldwide.
         </h1>
@@ -106,7 +106,7 @@ const HeroAbout: React.FC = () => {
       </div>
 
       <div className="w-full md:w-1/2 px-4 mt-8 md:mt-0">
-        <div className="mx-auto w-full max-w-lg rounded-xl bg-black">
+        <div className="w-full max-w-lg rounded-xl bg-black">
           {disclosures.map((item, index) => (
             <Disclosure key={index}>
               {({ open }) => (

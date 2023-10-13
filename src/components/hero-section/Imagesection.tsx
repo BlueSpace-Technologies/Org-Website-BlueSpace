@@ -1,21 +1,21 @@
 import React from 'react';
-
+import Image from 'next/image';
 interface ImageRepeatProps {
   count: number;
 }
 
 const ImageRepeat: React.FC<ImageRepeatProps> = ({ count }) => {
-  const imageUrl =
-    'https://cdn.sanity.io/images/r115idoc/production/1b1b0acea8c5765213e8856f5727f29ed4158805-290x192.svg?q=75&fit=clip&auto=format';
+
 
   return (
     <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       {Array.from({ length: count }).map((_, index) => (
         <div key={index} className="p-2">
-          <img
-            src={imageUrl}
+          <Image
+            src="https://pngimg.com/uploads/apple_logo/apple_logo_PNG19675.png"
             alt={`Image ${index + 1}`}
-            className="w-full h-auto"
+            width={290} // Set the width of your image
+            height={192} // Set the height of your image
           />
         </div>
       ))}
