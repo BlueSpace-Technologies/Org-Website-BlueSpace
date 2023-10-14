@@ -21,9 +21,9 @@ const DisclosureItem: React.FC<DisclosureItemProps> = ({
     <div className="overflow-hidden">
       <Disclosure.Button
   onClick={toggleDisclosure}
-  className="flex items-center justify-start w-full  py-3 text-xl font-unisans text-white bg-black rounded-lg  focus-visible:ring focus-visible:ring-white focus-visible:ring-opacity-75 transition duration-300 ease-in-out"
+  className="flex items-center justify-start w-full py-2 text-xl font-unisans text-white bg-black rounded-lg  focus-visible:ring focus-visible:ring-white focus-visible:ring-opacity-75 transition duration-300 ease-in-out"
 >
-  <span className="text-start font-bold sm:text-1xl lg:text-2xl">{title}</span>
+  <span className="text-start font-bold sm:text-1xl lg:text-4xl">{title}</span>
   <ChevronUpIcon
     className={`${
       isOpen ? "transform rotate-180" : ""
@@ -87,10 +87,10 @@ const HeroAbout: React.FC = () => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -50 }}
       transition={{ duration: 0.5 }}
-      className="flex flex-col md:flex-row mt-32"
+      className=" mx-auto w-full flex flex-col md:flex-row mt-32"
     >
-      <div className="md:w-1/2 md:px-12 lg:px-24 xl:px-32 text-white ">
-        <h1 className="text-2xl py-5 font-semibold font-unisans mb-4 sm:text-1xl lg:text-3xl">
+      <div className="md:w-1/2 md:px-12 lg:px-24 xl:px-32 text-white sm:px-4">
+        <h1 className="text-2xl  font-semibold font-unisans mb-4 sm:text-1xl lg:text-3xl">
           Based in Mumbai, we strengthen brands through exceptional digital
           experiences for companies worldwide.
         </h1>
@@ -106,7 +106,7 @@ const HeroAbout: React.FC = () => {
       </div>
 
       <div className="w-full md:w-1/2 px-4 mt-8 md:mt-0">
-        <div className="w-full max-w-lg rounded-xl bg-black">
+        <div className="w-full items-center max-w-4xl rounded-xl bg-black">
           {disclosures.map((item, index) => (
             <Disclosure key={index}>
               {({ open }) => (

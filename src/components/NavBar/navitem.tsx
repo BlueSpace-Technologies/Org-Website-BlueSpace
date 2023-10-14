@@ -32,17 +32,23 @@ const NavigationItem = ({
       animate={animate}
       custom={customDelay}
     >
-      <Link
-        href={href}
-        className={classNames(
-          isActive
-            ? "font-bold text-off-black custom-underline"
-            : "font-medium text-white",
-          "md:underlined relative block whitespace-nowrap text-3xl transition md:text-lg"
-        )}
-      >
-        {title}
-      </Link>
+     <Link
+  href={href}
+  className={classNames(
+    isActive
+      ? "font-bold text-white"
+      : "font-medium text-white",
+    "md:underlined relative block whitespace-nowrap text-3xl transition md:text-lg",
+    {
+      "custom-underline": isActive,
+    }
+  )}
+>
+  <span className="inline-block pb-2 border-b-2 border-transparent hover:border-white">
+    {title}
+  </span>
+</Link>
+
     </motion.li>
   );
 };

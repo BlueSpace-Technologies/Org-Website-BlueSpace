@@ -1,7 +1,7 @@
 import Avatar from "@/components/ui/avatar";
 
 import HeroSection from "@/components/hero-section/HeroSection";
-import Gettoknow from "@/components/hero-section/Gettoknow";
+import Gettoknow from "@/components/hero-section/CompanyInfo";
 import FAQS from "@/components/FAQ/faq";
 import HorizontalImageScroll from "@/components/hero-section/imagesscroll";
 import DefaultCarousel from "@/components/hero-section/imagesscroll";

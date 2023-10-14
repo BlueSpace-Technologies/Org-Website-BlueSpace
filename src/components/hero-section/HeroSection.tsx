@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import VideoHeri from "./VideoHeri";
+import VideoHeri from "./Video";
 import HeroAbout from "./HeroAbout";
 import ImageSection from "./Imagesection";
 import WorkShowcase from "./Workshowcase";
