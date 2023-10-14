@@ -6,7 +6,6 @@ import { MobileMenu } from "./mobile/MobileMenu";
 import Headroom from "react-headroom";
 import { useOnKeyDown } from "./hooks/useOnkeyDown";
 import { BurgerIcon } from "./burgerIcon";
-import { ThemeToggle } from "./theme";
 import { NavigationItem } from "./navitem";
 import { Logo } from "./logo";
 import { Container } from "./Container";
