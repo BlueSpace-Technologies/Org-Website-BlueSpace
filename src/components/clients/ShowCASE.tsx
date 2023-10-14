@@ -9,14 +9,14 @@ interface ImageRepeatProps {
 const Showcasee: React.FC<ImageRepeatProps> = ({ count }) => {
   return (
     <>
-        <div className=" py-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className=" p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
       {Array.from({ length: count }).map((_, index: number) => (
-        <section className='px-9 py-9' key={index}>
-          <h1 className='font-unisans font-bold text-5xl text-white py-5'>
+        <section className='py-2 px-1 lg:p-8' key={index}>
+          <h1 className='font-unisans font-bold text-3xl text-white py-5 lg:text-5xl'>
             Meta
           </h1>
-          <p className='max-w-lg text-white font-unisans text-xl'>
+          <p className='max-w-lg text-gray-400 font-unisans text-xl'>
             Strategy, web design, and development for Facebook’s new internet technology.
           </p>
         </section>
