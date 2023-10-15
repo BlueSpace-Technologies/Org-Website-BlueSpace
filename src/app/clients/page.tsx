@@ -8,7 +8,7 @@ export default function Home() {
           Clients
         </h1>
         <h1 className="max-w-xl text-white  font-unisans font-none text-lg lg:text-2xl sm:text-3xl">
-          We've partnered with forward-thinking companies, from innovative
+          We{"`"}ve partnered with forward-thinking companies, from innovative
           startups to Fortune 100 corporations.
         </h1>
         <div className="flex justify-start items-start mt-3 space-x-8 ">
