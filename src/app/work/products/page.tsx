@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { NavigationItems } from "./navitems";
+import { NavigationItems } from "../navitems";
 
 const navItems = [
   {
@@ -21,7 +21,7 @@ const navItems = [
     title: "Brands",
   },
 ];
-export default function Work() {
+export default function products() {
   const navigationVariants = {
     hidden: { opacity: 0, x: -50 },
     visible: (custom: number) => ({
@@ -35,7 +35,7 @@ export default function Work() {
       <section className="py-2 px-5">
       <div className="flex flex-col items-end justify-evenly  lg:flex-row lg:p-20 ">
           <h1 className=" p-2 py-6 font-unisans text-white text-4xl sm:text-7xl sm:items-start md:text-7xl md:p-5 lg:text-7xl xl:text-8xl xl:max-w-screen-lg">
-            We bring your boldest ideas to life
+          Digital products that people love to use
           </h1>
           <ul className="justify-end ">
             {navItems.map(({ href, title }, i) => (

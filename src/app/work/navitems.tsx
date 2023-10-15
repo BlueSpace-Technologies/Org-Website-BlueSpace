@@ -12,7 +12,7 @@ export interface NavigationItemProps {
   customDelay?: number;
 }
 
-const NavigationItem = ({
+const NavigationItems = ({
   href,
   title,
   variants,
@@ -34,11 +34,13 @@ const NavigationItem = ({
         
           className={classNames(
             isActive
-              ? "font-bold text-white border-b-2 border-white"
-              : "font-medium text-white",
-            "md:underlined relative block whitespace-nowrap text-3xl transition md:text-lg"
+              ? "font-bold text-white"
+              : "font-none text-gray-400",
+            "md: relative block whitespace-nowrap text-xl transition md:text-lg"
           )}
         >
+        
+          {isActive && <span className="ml-2 text-white">●</span>}{"   "}
           {title}
     
       </Link>
@@ -46,4 +48,4 @@ const NavigationItem = ({
   );
 };
 
-export { NavigationItem };
+export { NavigationItems };
