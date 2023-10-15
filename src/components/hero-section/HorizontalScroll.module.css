@@ -1,20 +1,12 @@
-/* styles/HorizontalScroll.module.css */
+/* styles/scrolling-images.css */
 
-.scrollContainer {
-    width: 100%;
-    overflow: hidden;
-    --tw-bg-opacity: 1;
-    background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-  }
-  
-  .scrollContent {
-    display: flex;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .image {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-  
+.scroll-images-container {
+  width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.scroll-images {
+  display: inline-block;
+  margin-right: 20px;
+}

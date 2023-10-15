@@ -20,24 +20,25 @@ const DisclosureItem: React.FC<DisclosureItemProps> = ({
   return (
     <div className="overflow-hidden">
       <Disclosure.Button
-  onClick={toggleDisclosure}
-  className="flex items-center justify-start w-full py-2 text-xl font-unisans text-white bg-black rounded-lg  focus-visible:ring focus-visible:ring-white focus-visible:ring-opacity-75 transition duration-300 ease-in-out"
->
-  <span className="text-start font-bold sm:text-1xl lg:text-4xl">{title}</span>
-  <ChevronUpIcon
-    className={`${
-      isOpen ? "transform rotate-180" : ""
-    } lg:h-10 w-10 ml-4  sm:h-auto  text-white transition-transform duration-300 ease-in-out`}
-  />
-</Disclosure.Button>
-<Disclosure.Panel
-  className={`${
-    isOpen ? "block" : "hidden"
-  } bg-black text-xl text-white  rounded-b-lg transition-opacity duration-300 ease-in-out`}
->
-  {content}
-</Disclosure.Panel>
-
+        onClick={toggleDisclosure}
+        className="flex items-center justify-start w-full py-5 text-xl font-unisans text-white bg-black rounded-lg  focus-visible:ring focus-visible:ring-white focus-visible:ring-opacity-75 transition duration-300 ease-in-out"
+      >
+        <span className="text-start font-bold sm:text-1xl lg:text-4xl">
+          {title}
+        </span>
+        <ChevronUpIcon
+          className={`${
+            isOpen ? "transform rotate-180" : ""
+          } lg:h-10 w-10 ml-4  sm:h-auto  text-white transition-transform duration-300 ease-in-out`}
+        />
+      </Disclosure.Button>
+      <Disclosure.Panel
+        className={`${
+          isOpen ? "block" : "hidden"
+        } bg-black text-xl text-white  rounded-b-lg transition-opacity duration-300 ease-in-out`}
+      >
+        {content}
+      </Disclosure.Panel>
     </div>
   );
 };
@@ -87,26 +88,17 @@ const HeroAbout: React.FC = () => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -50 }}
       transition={{ duration: 0.5 }}
-      className=" mx-auto w-full flex flex-col md:flex-row mt-32"
+      className=" w-full flex flex-col md:flex-row mt-32 justify-evenly"
     >
-      <div className="md:w-1/2 md:px-12 lg:px-24 xl:px-32 text-white sm:px-4">
-        <h1 className="text-2xl  font-semibold font-unisans mb-4 sm:text-1xl lg:text-3xl">
+      <div className="flex px-7 lg:flex-row lg:p-10 md:flex-row items-start">
+        <h1 className=" max-w-2xl text-2xl text-white font-semibold font-unisans mb-4 sm:text-1xl lg:text-4xl">
           Based in Mumbai, we strengthen brands through exceptional digital
-          experiences for companies worldwide.
+          experiences for companies world wide.
         </h1>
-        <motion.p
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="text-gray-300 text-lg p-4"
-        >
-          We are a team of strategists, designers, and developers creating
-          memorable digital brand experiences that grow businesses.
-        </motion.p>
       </div>
 
-      <div className="w-full md:w-1/2 px-4 mt-8 md:mt-0">
-        <div className="w-full items-center max-w-4xl rounded-xl bg-black">
+      <div className=" max-w-xl p-3 py-7 w-full md:w-1/2 px-4 mt-8 md:mt-0">
+        <div className="w-full   p-5items-center max-w-4xl rounded-xl bg-black">
           {disclosures.map((item, index) => (
             <Disclosure key={index}>
               {({ open }) => (
