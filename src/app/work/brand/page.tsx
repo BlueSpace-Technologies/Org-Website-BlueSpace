@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { NavigationItems } from "../navitems";
+import WorkShowcases from "@/components/hero-section/Sencodeworkshowcase";
 
 const navItems = [
   {
@@ -58,6 +59,7 @@ export default function products() {
             ></motion.li>
           </ul>
         </div>
+      
       </section>
     </main>
   );

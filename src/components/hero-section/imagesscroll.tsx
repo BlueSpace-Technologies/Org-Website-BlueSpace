@@ -74,13 +74,13 @@ const App = () => {
     <>
       <div className='relative flex items-center bg-gray-200'>
         <MdChevronLeft
-          className=' bg-white  cursor-pointer '
+          className=' bg-gray-200  cursor-pointer '
           onClick={slideLeft}
           size={40}
         />
         <div
           id='slider'
-          className='w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide'
+          className='w-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide'
         >
           {data.map((item) => (
             <div
@@ -90,14 +90,14 @@ const App = () => {
               <Image
                 src={item.img}
                 alt=''
-                width={800} // Set the width and height to the image's original dimensions
+                width={800} 
                 height={600}
               />
             </div>
           ))}
         </div>
         <MdChevronRight
-          className='bg-white cursor-pointer'
+          className='bg-gray-200 cursor-pointer'
           onClick={slideRight}
           size={40}
         />
