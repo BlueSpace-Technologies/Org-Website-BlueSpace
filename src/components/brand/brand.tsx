@@ -1,11 +1,11 @@
 import React from 'react'
-
+import Image from 'next/image';
 
 const brand = () => {
     return (
 <div className='mt-[13rem]'>
-<div className="bg-[#0c0c0c] p-4 ml-2 lg:hidden">
-            <img src='./grid1.png' alt='branding' width={500} height={700}/>
+<div className="bg-[#0c0c0c] p-4 ml-2 md:hidden">
+            <img src='/grid1.png' alt='branding'/>
         </div>
     <div className=" md:grid grid-cols-2 gap-8 ">
         <div className="bg-[#0c0c0c] p-4">
@@ -33,15 +33,15 @@ const brand = () => {
             </ul>
             </div>
             </div>
-        <div className="hidden md:block bg-[#0c0c0c] p-4 ml-8  lg:block">
-        <img src='./grid1.png' alt='branding' width={500} height={700}/>
+        <div className="hidden md:block bg-[#0c0c0c] p-4 ml-8  lg:block ">
+            <img src='/grid1.png' alt='branding' />
         </div>
     </div>
-    <div className='  md:mt-[20rem]'>
+    <div className='  lg:mt-[20rem] md:mt-[10rem]'>
     <div className="md:grid grid-cols-2 gap-2 ">
         <div className= "p-4">
         <div className=" bg-[#0c0c0c] p-4 lg:ml-[100px]  lg:block">
-            <img src='./grid1.png' alt='branding' width={500} height={700}/>
+            <img src='/grid1.png' alt='branding' />
         </div>
         </div>
         <div className=" p-4 lg:mr-[90px]">
@@ -50,7 +50,7 @@ const brand = () => {
                 Digital Products
             </div>
             <div className=' mt-[2rem]  text-white lg:text-xl'>
-            <p  className='  lg:pl-[130px]  font-unisans'>
+            <p  className='  lg:pl-[130px] font-unisans'>
             At Bluespace, we believe everyone deserves an <br/>
             exceptional user experience, whether using a<br/>
             product at work or in their free time. We create<br/>
@@ -73,16 +73,16 @@ const brand = () => {
             </div>
     </div>
     </div>
-    <div className='md:mt-[20rem]'>
-    <div className="bg-[#0c0c0c] p-4 ml-2 lg:hidden">
-            <img src='./grid1.png' alt='branding' width={500} height={700}/>
+    <div className='lg:mt-[20rem] md:mt-[10rem]'>
+    <div className="bg-[#0c0c0c] p-4 ml-2 md:hidden">
+            <img src='/grid1.png' alt='branding'/>
         </div>
     <div className=" md:grid grid-cols-2 gap-8 ">
         <div className="bg-[#0c0c0c] p-4">
             <div className='font-unisans  lg:pl-[120px] text-white text-3xl ml-4 lg:text-5xl mt-0 text-start sm:text-5xl'>
             Websites
             </div>
-            <div className=' mt-[2rem]   text-white lg:text-xl'>
+            <div className=' mt-[2rem] text-white lg:text-xl'>
             <p  className='  lg:pl-[120px] font-unisans'>
             A website is the most important channel to<br/>
             showcase your brand to customers. Our<br/>
@@ -104,15 +104,15 @@ const brand = () => {
             </div>
             </div>
         <div className="hidden md:block bg-[#0c0c0c] p-4 ml-8  lg:block">
-        <img src='./grid1.png' alt='branding' width={500} height={700}/>
+            <img src='/grid1.png' alt='branding' />
         </div>
     </div>
     </div>
-    <div className='  md:mt-[20rem]'>
+    <div className='  lg:mt-[20rem] md:mt-[10rem]'>
     <div className="md:grid grid-cols-2 gap-2 ">
         <div className= "p-4">
         <div className=" bg-[#0c0c0c] p-4 lg:ml-[100px]  lg:block">
-        <img src='./grid1.png' alt='branding' width={500} height={700}/>
+            <img src='/grid1.png'  alt='branding' />
         </div>
         </div>
         <div className=" p-4 lg:mr-[90px]">
@@ -120,7 +120,7 @@ const brand = () => {
             <div className='font-unisans  lg:pl-[150px] text-white text-3xl ml-4 lg:text-5xl mt-0 text-start sm:text-5xl'>
             Development
             </div>
-            <div className=' mt-[2rem] text-white lg:text-xl'>
+            <div className=' mt-[2rem] text-white  lg:text-xl'>
             <p  className='  lg:pl-[130px] font-unisans'>
             Our designers and developers collaborate to<br/>
             create websites and products that provide<br/>

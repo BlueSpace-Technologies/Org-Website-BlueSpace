@@ -1,7 +1,7 @@
 const Hero = () => {
     return (
         <main>
-            <div className="bg-[#0c0c0c] lg:p-[50px] ">
+            <div className="bg-[#0c0c0c] lg:p-[50px] md:p-0  ">
         <div className="flex py-9 items-start bg-[#0c0c0c] lg:pl-[100px] sm:mx-auto lg:mt-8">
         <h1 className="font-unisans font-bold text-white text-3xl ml-4 lg:text-6xl mt-0 text-start sm:text-5xl">
             A full-service digital 
