@@ -6,7 +6,6 @@ import { Header } from "@/components/NavBar";
 
 
 const inter = Inter({ subsets: ["cyrillic-ext"] });
-
 export const metadata: Metadata = {
   title: "BlueSpace Tech",
   description: "BlueSpace is a branding and tech Services agency",

@@ -1,9 +1,10 @@
 import Avatar from "@/components/ui/avatar";
+import RootLayout from "../layout";
 
 export default function Home() {
     return (
-        <div>
-        <Avatar/> 
-        </div>
+        <h1>
+            
+        </h1>
     );
 }
