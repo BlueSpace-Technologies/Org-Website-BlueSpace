@@ -5,7 +5,7 @@ const brand = () => {
     return (
 <div className='mt-[13rem]'>
 <div className="bg-[#0c0c0c] p-4 ml-2 lg:hidden">
-            <img src="./grid1.png" alt='branding' width={500} height={700}/>
+            <img src='./grid1.png' alt='branding' width={500} height={700}/>
         </div>
     <div className=" md:grid grid-cols-2 gap-8 ">
         <div className="bg-[#0c0c0c] p-4">
@@ -34,14 +34,14 @@ const brand = () => {
             </div>
             </div>
         <div className="hidden md:block bg-[#0c0c0c] p-4 ml-8  lg:block">
-        <img src="./grid1.png" alt='branding' width={500} height={700}/>
+        <img src='./grid1.png' alt='branding' width={500} height={700}/>
         </div>
     </div>
     <div className='  md:mt-[20rem]'>
     <div className="md:grid grid-cols-2 gap-2 ">
         <div className= "p-4">
         <div className=" bg-[#0c0c0c] p-4 lg:ml-[100px]  lg:block">
-            <img src="./grid1.png" alt='branding' width={500} height={700}/>
+            <img src='./grid1.png' alt='branding' width={500} height={700}/>
         </div>
         </div>
         <div className=" p-4 lg:mr-[90px]">
@@ -75,7 +75,7 @@ const brand = () => {
     </div>
     <div className='md:mt-[20rem]'>
     <div className="bg-[#0c0c0c] p-4 ml-2 lg:hidden">
-            <img src="./grid1.png" alt='branding' width={500} height={700}/>
+            <img src='./grid1.png' alt='branding' width={500} height={700}/>
         </div>
     <div className=" md:grid grid-cols-2 gap-8 ">
         <div className="bg-[#0c0c0c] p-4">
@@ -104,7 +104,7 @@ const brand = () => {
             </div>
             </div>
         <div className="hidden md:block bg-[#0c0c0c] p-4 ml-8  lg:block">
-        <img src="./grid1.png" alt='branding' width={500} height={700}/>
+        <img src='./grid1.png' alt='branding' width={500} height={700}/>
         </div>
     </div>
     </div>
@@ -112,7 +112,7 @@ const brand = () => {
     <div className="md:grid grid-cols-2 gap-2 ">
         <div className= "p-4">
         <div className=" bg-[#0c0c0c] p-4 lg:ml-[100px]  lg:block">
-        <img src="./grid1.png" alt='branding' width={500} height={700}/>
+        <img src='./grid1.png' alt='branding' width={500} height={700}/>
         </div>
         </div>
         <div className=" p-4 lg:mr-[90px]">
