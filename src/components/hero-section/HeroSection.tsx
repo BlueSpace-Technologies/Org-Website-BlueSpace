@@ -1,12 +1,13 @@
 "use client";
 
 import React from "react";
-import VideoHeri from "./VideoHeri";
+import VideoHeri from "./Video";
 import HeroAbout from "./HeroAbout";
 import ImageSection from "./Imagesection";
-import WorkShowcase from "./Workshowcase";
-import FAQS from "./faq";
+import WorkShowcase from "./WorkshowcasePARTONE";
+import FAQS from "../FAQ/faq";
 import ImageRepeat from "./Imagesection";
+import WorkShowcases from "./Sencodeworkshowcase";
 
 const HeroSection = () => {
   return (
@@ -25,7 +26,7 @@ const HeroSection = () => {
 
       <HeroAbout />
 
-      <ImageRepeat count={8}/>
+      <ImageRepeat count={8} />
 
       <div className="flex justify-center mt-28 text-2xl sm:text-4xl md:text-5xl lg:text-3xl items-center transform hover:scale-105 transition-transform px-4 sm:px-8 md:px-12 xl:px-16">
         <div className="">
@@ -36,6 +37,7 @@ const HeroSection = () => {
       </div>
 
       <WorkShowcase />
+      <WorkShowcases />
     </main>
   );
 };

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import FAQS from "./faq";
+import FAQS from "../FAQ/faq";
 import ImageSection from "./Imagesection";
 import { NavigationMenu } from "@radix-ui/react-navigation-menu";
 
