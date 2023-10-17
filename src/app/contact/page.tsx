@@ -5,7 +5,7 @@ import {
   FaInstagram,
   FaTwitterSquare,
   FaLinkedinIn,
-} from 'react-icons/fa';
+} from "react-icons/fa";
 import Image from "next/image";
 
 
@@ -17,7 +17,7 @@ const Contact = () => {
         <h1 className="text-6xl font-bold mb-6 text-black pl-10">Let{"'"}s Talk</h1>
         <h6 className="text-2xl font-medium mb-6 pl-10 text-black"
         >
-        We'd love to learn more about you<br></br>
+        We{"'"}d love to learn more about you<br></br>
         what we can design and bulid together</h6>
          
 
