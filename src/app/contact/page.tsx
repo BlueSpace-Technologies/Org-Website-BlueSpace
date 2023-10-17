@@ -14,7 +14,7 @@ const Contact = () => {
   return (
     <div className="bg-gray-100 py-16 ">
       <div className="container mx-auto px-4">
-        <h1 className="text-6xl font-bold mb-6 text-black pl-10">Let's Talk</h1>
+        <h1 className="text-6xl font-bold mb-6 text-black pl-10">Let{"'"}s Talk</h1>
         <h6 className="text-2xl font-medium mb-6 pl-10 text-black"
         >
         We'd love to learn more about you<br></br>
@@ -35,7 +35,7 @@ const Contact = () => {
       </div>
     </div>
 
-    <div className='flex justify-between md:w-[25%] my-6 pl-10 '>
+    <div className="flex justify-between md:w-[25%] my-6 pl-10">
             <FaFacebookSquare style={{ color: iconColor }} size={30} />
             <FaLinkedinIn style={{ color: iconColor }} size={30} />
             <FaInstagram  style={{ color: iconColor }}size={30} />
@@ -59,7 +59,7 @@ const Contact = () => {
 
       <div className="hidden md:block md:w-1/2 p-4 mt-[-28rem]">  
       <Image className="mx-auto rounded-lg shadow-lg max-w-full h-auto text-black"
-      src = '/contact1.jpg' width={500} height={700}
+      src = "/contact1.jpg" width={500} height={700}
         alt="Image"/>  
       </div>
     </div>
