@@ -6,7 +6,6 @@ import {
   FaTwitterSquare,
   FaLinkedinIn,
 } from 'react-icons/fa';
-import Image from "next/image";
 
 
 const Contact = () => {
@@ -19,7 +18,7 @@ const Contact = () => {
         >
         We'd love to learn more about you<br></br>
         what we can design and bulid together</h6>
-         
+        
 
     <div className="mt-10">
       <div className="lg:flex lg:justify-start pl-6">
@@ -53,7 +52,7 @@ const Contact = () => {
         <h2 className="mr-4">Privacy</h2>
         <h2 className="mr-4">Terms</h2>
         <h2 className="mr-4">Sitemap</h2>
-       </div>
+    </div>
 
       </div>
 
