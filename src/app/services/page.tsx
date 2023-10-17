@@ -1,16 +1,9 @@
-import Hero from "@/components/hero-section/hero-service"
-import BRAND from "@/components/brand/brand"
-import INDUSTRY from "@/components/industry/industry"
+import Avatar from "@/components/ui/avatar";
+
 export default function Home() {
-  return (
-    <div className="bg-[#0c0c0c]">
-      <Hero />
-      <main>
-        <BRAND />
-        <INDUSTRY />
-      </main>
-    </div>
-  )
-  
+    return (
+        <div>
+        <Avatar/> 
+        </div>
+    );
 }
-    
