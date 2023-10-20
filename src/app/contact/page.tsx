@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import {
   FaFacebookSquare,
   FaGithubSquare,
@@ -56,10 +57,13 @@ const Contact = () => {
 
       </div>
 
-        <div className="hidden md:block md:w-1/2 p-4 mt-[-28rem]">  
-        <img className="mx-auto rounded-lg shadow-lg max-w-full h-auto text-black"
+        <div className="hidden md:block p-4 mt-[-28rem]">  
+        <Image className="mx-auto rounded-lg shadow-lg max-w-full h-auto text-black"
         src = '/contact1.jpg'
-        alt="Image"/>  
+        alt="Image"
+        width={700}
+        height={1400}
+        layout="responsive"/>  
       </div>
     </div>
     </div>
