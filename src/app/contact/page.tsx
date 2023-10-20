@@ -14,7 +14,7 @@ const Contact = () => {
   return (
     <div className="bg-gray-100 py-16 md:h-[1000px] ">
       <div className="container mx-auto px-4">
-        <h1 className="text-6xl font-bold mb-6 text-black pl-10">Let"s Talk</h1>
+        <h1 className="text-6xl font-bold mb-6 text-black pl-10">Let{"'"}s Talk</h1>
         <h6 className="text-2xl font-medium mb-6 pl-10 text-black"
         >
         We{"'"}d love to learn more about you<br></br>
