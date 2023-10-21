@@ -6,7 +6,6 @@ import { Header } from "@/components/NavBar";
 
 
 const inter = Inter({ subsets: ["cyrillic-ext"] });
-
 export const metadata: Metadata = {
   title: "BlueSpace Tech",
   description: "BlueSpace is a branding and tech Services agency",
@@ -21,9 +20,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header/>
-        {children}
-        <Footer/>
+      <div className="min-h-screen">
+      <div className={`flex flex-col min-h-screen ${inter.className}`}>
+        <Header />
+        <main className="flex-1">{children}</main>
+      </div>
+      <Footer />
+    </div>
       </body>
 
     </html>

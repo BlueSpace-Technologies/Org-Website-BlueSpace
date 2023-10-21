@@ -8,7 +8,7 @@ const WorkShowcase = () => {
         <div>
           <video
             poster="https://cdn.sanity.io/images/r115idoc/production/3b4132739409b27731583066a5ea88091a7b4935-1700x954.png?q=90&auto=format"
-            className="hover:scale-105 transform transition-transform duration-300 ease-in-out"
+            className="hover:scale-105 sm:p-20 transform transition-transform duration-300 ease-in-out"
             autoPlay
             loop
             muted
@@ -18,7 +18,7 @@ const WorkShowcase = () => {
               type="video/mp4"
             />
           </video>
-          <h1 className=" text-white py-6 font-unisans text-2xl ">CASE 1</h1>
+          <h1 className=" text-white py-6 sm:p-20 font-unisans text-2xl ">CASE 1</h1>
           <p className="text-white font-unisans">
             hello donw wrojfdfsdfsdffsdfsdfdsfsdfsd
           </p>
@@ -29,7 +29,7 @@ const WorkShowcase = () => {
         <div>
           <video
             poster="https://cdn.sanity.io/images/r115idoc/production/3b4132739409b27731583066a5ea88091a7b4935-1700x954.png?q=90&auto=format"
-            className="w-full py-28 hover:scale-105 transform transition-transform duration-300 ease-in-out"
+            className="hover:scale-105 sm:p-20 transform transition-transform duration-300 ease-in-out"
             autoPlay
             loop
             muted
@@ -52,7 +52,7 @@ const WorkShowcase = () => {
         <div>
           <video
             poster="https://cdn.sanity.io/images/r115idoc/production/3b4132739409b27731583066a5ea88091a7b4935-1700x954.png?q=90&auto=format"
-            className="hover:scale-105 transform transition-transform duration-300 ease-in-out"
+            className="hover:scale-105 sm:p-20 transform transition-transform duration-300 ease-in-out"
             autoPlay
             loop
             muted
