@@ -5,7 +5,7 @@ const why = () => {
   return (
     <div className='text-[black] lg:mt-[100px] ml-[30px] overflow-hidden mt-[150px]'>
         <div className='lg:text-6xl lg:ml-[180px] font-bold text-4xl ml-0'>
-        <h1><span className='opacity-75'>Why '</span> BlueSpace</h1>
+        <h1><span className='opacity-75'>Why {"`"}</span> BlueSpace</h1>
     </div>
     <div className='mt-[150px]'>
     <div className=" mt-[60px] mr-[50px] lg:hidden sm:block">

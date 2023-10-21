@@ -6,7 +6,7 @@ const content = () => {
             <div className="container mx-auto mt-28 mb-20">
             
             <h6 className=" lg:pl-[180px] pl-12 sm:text-4xl md:text-3xl lg:text-3xl font-normal mt-[-60px]">
-            We're a global group of strategists, designers,<br />
+            We{"`"}re a global group of strategists, designers,<br />
             and engineers building notable brands and premier <br />
             digital experiences that captivate users worldwide.
             <br />
