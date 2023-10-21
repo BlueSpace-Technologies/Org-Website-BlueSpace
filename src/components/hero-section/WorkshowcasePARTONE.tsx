@@ -29,7 +29,7 @@ const WorkShowcase = () => {
         <div>
           <video
             poster="https://cdn.sanity.io/images/r115idoc/production/3b4132739409b27731583066a5ea88091a7b4935-1700x954.png?q=90&auto=format"
-            className="w-full py-28 hover:scale-105 transform transition-transform duration-300 ease-in-out"
+            className="hover:scale-105 sm:p-20 transform transition-transform duration-300 ease-in-out"
             autoPlay
             loop
             muted
@@ -52,7 +52,7 @@ const WorkShowcase = () => {
         <div>
           <video
             poster="https://cdn.sanity.io/images/r115idoc/production/3b4132739409b27731583066a5ea88091a7b4935-1700x954.png?q=90&auto=format"
-            className="hover:scale-105 transform transition-transform duration-300 ease-in-out"
+            className="hover:scale-105 sm:p-20 transform transition-transform duration-300 ease-in-out"
             autoPlay
             loop
             muted
