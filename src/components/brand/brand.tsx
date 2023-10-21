@@ -3,12 +3,12 @@ import Image from 'next/image';
 
 const brand = () => {
     return (
-<div className='mt-[13rem]'>
-<div className="bg-[#17191F] p-4 ml-2 md:hidden">
+<div className='mt-[13rem] w-full'>
+<div className="p-4 ml-2 md:hidden">
             <Image src='/grid1.png' alt='branding' width={500} height={700} layout='responsive'/>
         </div>
     <div className=" md:grid grid-cols-2 gap-8 ">
-        <div className="bg-[#17191F] p-4">
+        <div className=" p-4">
             <div className='font-unisans  lg:pl-[120px] text-white text-3xl ml-4 lg:text-5xl mt-0 text-start sm:text-5xl'>
                 Branding
             </div>
@@ -33,19 +33,19 @@ const brand = () => {
             </ul>
             </div>
             </div>
-        <div className="hidden md:block bg-[#17191F] p-4 ml-8  lg:block ">
+        <div className="hidden md:block  p-4 ml-8  lg:block ">
         <Image src='/grid1.png' alt='branding' width={500} height={700} layout='responsive'/>
         </div>
     </div>
     <div className='  lg:mt-[20rem] md:mt-[10rem]'>
     <div className="md:grid grid-cols-2 gap-2 ">
         <div className= "p-4">
-        <div className=" bg-[#17191F] p-4 lg:ml-[100px]  lg:block">
+        <div className="  p-4 lg:ml-[100px]  lg:block">
         <Image src='/grid1.png' alt='branding' width={500} height={700} layout='responsive'/>
         </div>
         </div>
         <div className=" p-4 lg:mr-[90px]">
-            <div className="bg-[#17191F] p-4  md:items-center">
+            <div className=" p-4  md:items-center">
             <div className='font-unisans  lg:pl-[150px] text-white text-3xl ml-4 lg:text-5xl mt-0 text-start sm:text-5xl'>
                 Digital Products
             </div>
@@ -74,11 +74,11 @@ const brand = () => {
     </div>
     </div>
     <div className='lg:mt-[20rem] md:mt-[10rem]'>
-    <div className="bg-[#17191F] p-4 ml-2 md:hidden">
+    <div className=" p-4 ml-2 md:hidden">
     <Image src='/grid1.png' alt='branding' width={500} height={700} layout='responsive'/>
         </div>
     <div className=" md:grid grid-cols-2 gap-8 ">
-        <div className="bg-[#17191F] p-4">
+        <div className="p-4">
             <div className='font-unisans  lg:pl-[120px] text-white text-3xl ml-4 lg:text-5xl mt-0 text-start sm:text-5xl'>
             Websites
             </div>
@@ -103,7 +103,7 @@ const brand = () => {
             </ul>
             </div>
             </div>
-        <div className="hidden md:block bg-[#17191F] p-4 ml-8  lg:block">
+        <div className="hidden md:block  p-4 ml-8  lg:block">
         <Image src='/grid1.png' alt='branding' width={500} height={700} layout='responsive'/>
         </div>
     </div>
@@ -111,12 +111,12 @@ const brand = () => {
     <div className='  lg:mt-[20rem] md:mt-[10rem]'>
     <div className="md:grid grid-cols-2 gap-2 ">
         <div className= "p-4">
-        <div className=" bg-[#17191F] p-4 lg:ml-[100px]  lg:block">
+        <div className="  p-4 lg:ml-[100px]  lg:block">
         <Image src='/grid1.png' alt='branding' width={500} height={700} layout='responsive'/>
         </div>
         </div>
         <div className=" p-4 lg:mr-[90px]">
-            <div className="bg-[#17191F] p-4  md:items-center">
+            <div className=" p-4  md:items-center">
             <div className='font-unisans  lg:pl-[150px] text-white text-3xl ml-4 lg:text-5xl mt-0 text-start sm:text-5xl'>
             Development
             </div>
