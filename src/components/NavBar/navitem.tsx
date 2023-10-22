@@ -24,12 +24,7 @@ const NavigationItem = ({
   const isActive = pathname === href; // Check if the current path exactly matches the href.
 
   return (
-    <motion.li
-      variants={variants}
-      initial={initial}
-      animate={animate}
-      custom={customDelay}
-    >
+  
       <Link href={href}
         
           className={classNames(
@@ -42,7 +37,7 @@ const NavigationItem = ({
           {title}
     
       </Link>
-    </motion.li>
+
   );
 };
 
