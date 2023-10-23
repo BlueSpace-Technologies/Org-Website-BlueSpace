@@ -55,11 +55,11 @@ const industriesData = {
 
 const Industries = () => {
   return (
-    <div className="bg-black">
-      <div className="font-unisans text-white text-3xl font-semibold lg:text-6xl mt-0 text-start sm:text-4xl">
+    <div className="bg-gray-700 py-16 px-10">
+      <div className="font-unisans px-4 p-5 text-white text-3xl font-semibold lg:text-6xl mt-0 text-start sm:text-4xl">
         <h1>Industries</h1>
       </div>
-      <p className="font-unisans text-white lg:text-3xl sm:text-xl p-5">
+      <p className="font-unisans text-white lg:text-3xl sm:text-1xl p-5">
         We unite with big brands and startups in various industries to create award-winning work.
       </p>
       <div className="grid-container">

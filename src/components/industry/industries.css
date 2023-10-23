@@ -1,5 +1,6 @@
 /* industries.css */
 
+/* Base styles that apply to all screen sizes */
 .bg-black {
     background-color: #000;
   }
@@ -12,14 +13,10 @@
     color: #fff;
   }
   
-  .text {
-    color:white;
-  }
-  
   .grid-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 20px; /* Adjust the gap as needed */
+    gap: 20px;
     margin-top: 50px;
   }
   
@@ -40,5 +37,22 @@
     font-size: 1.25rem;
   }
   
-  /* Define additional styles as needed */
+  /* Media queries for responsiveness */
+  
+  /* Styles for screens with a maximum width of 768px */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .lg\:text-4xl {
+      font-size: 2rem;
+    }
+  }
+  
+  /* Styles for screens with a minimum width of 769px */
+  @media (min-width: 769px) {
+    .grid-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
   
