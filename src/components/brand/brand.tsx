@@ -55,7 +55,7 @@ const brand = () => {
             </ul>
           </div>
         </div>
-        <div className="hidden md:block  p-4 ml-8  lg:block ">
+        <div className=" md:block  p-4 ml-8  lg:block ">
           <Image
             src="/brand.jpg"
             alt="branding"
