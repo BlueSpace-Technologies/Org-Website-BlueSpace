@@ -5,10 +5,10 @@ export default function Home() {
   return (
     <div className="bg-black">
       <Hero />
-      <main>
+    
         <BRAND />
         <INDUSTRY />
-      </main>
+ 
     </div>
   )
   

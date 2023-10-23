@@ -16,7 +16,7 @@ function Item() {
     , value4:'Frontend Web Development',value5:'Backend Development & API Integration', value6:'Emerging Tech (AI, AR/VR, Wearables, Web3)' },
 ];
   return (
-    <div className='bg-[#17191F] overflow-hidden mt-[150px]'>
+    <div className='bg-black  mt-[150px]'>
         <div className='lg:text-6xl md:p-[180px] text-white p-[60px] font-semibold  text-5xl'>
         <h1>Capabilities</h1>
         </div>

@@ -1,0 +1,44 @@
+/* industries.css */
+
+.bg-black {
+    background-color: #000;
+  }
+  
+  .font-unisans {
+    font-family: 'Unisans', sans-serif;
+  }
+  
+  .text-white {
+    color: #fff;
+  }
+  
+  .text {
+    color:white;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px; /* Adjust the gap as needed */
+    margin-top: 50px;
+  }
+  
+  .industry-section {
+    border-bottom: 1px solid #000;
+    padding: 20px;
+  }
+  
+  .text-2xl {
+    font-size: 1.5rem;
+  }
+  
+  .lg\:text-4xl {
+    font-size: 2.5rem;
+  }
+  
+  .text-xl {
+    font-size: 1.25rem;
+  }
+  
+  /* Define additional styles as needed */
+  
