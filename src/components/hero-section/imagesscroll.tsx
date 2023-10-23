@@ -1,120 +1,99 @@
-"use client"
-import React, { useState } from 'react';
-import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
-import Image from 'next/image';
+"use client";
+import React, { useState } from "react";
 
-const App = () => {
-  const [scrollLeft, setScrollLeft] = useState(0);
 
-  const slideLeft = () => {
-    const slider = document.getElementById('slider') as HTMLElement;
-    slider.scrollLeft = scrollLeft - 500;
-    setScrollLeft(scrollLeft - 500);
-  };
-
-  const slideRight = () => {
-    const slider = document.getElementById('slider') as HTMLElement;
-    slider.scrollLeft = scrollLeft + 500;
-    setScrollLeft(scrollLeft + 500);
-  };
-
-  const data = [
-    {
-      id: 1,
-      img: 'https://images.unsplash.com/photo-1547005327-ef75a6961556?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8b2NlYW58ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
-    },
-    {
-      id: 2,
-      img: 'https://images.unsplash.com/photo-1480926965639-9b5f63a0817b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fG9jZWFufGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=800&q=60',
-    },
-    {
-      id: 3,
-      img: 'https://images.unsplash.com/photo-1566024287286-457247b70310?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG9jZWFufGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=800&q=60',
-    },
-    {
-      id: 4,
-      img: 'https://images.unsplash.com/photo-1494791368093-85217fbbf8de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
-    },
-    {
-      id: 5,
-      img: 'https://images.unsplash.com/photo-1551405780-03882d5a2ba7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fG9jZWFufGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=800&q=60',
-    },
-    {
-      id: 6,
-      img: 'https://images.unsplash.com/photo-1562059392-096320bccc7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG9jZWFufGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=800&q=60',
-    },
-    {
-      id: 7,
-      img: 'https://images.unsplash.com/photo-1478359844494-1092259d93e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fG9jZWFufGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=800&q=60',
-    },
-    {
-      id: 8,
-      img: 'https://images.unsplash.com/photo-1514999037859-b486988734f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fG9jZWFufGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=800&q=60',
-    },
-    {
-      id: 9,
-      img: 'https://images.unsplash.com/photo-1509477887414-681937645173?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDZ8fG9jZWFufGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=800&q=60',
-    },
-    {
-      id: 10,
-      img: 'https://images.unsplash.com/photo-1454783904586-9fa42a1e8442?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fG9jZWFufGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=800&q=60',
-    },
-    {
-      id: 11,
-      img: 'https://images.unsplash.com/photo-1530539595977-0aa9890547c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fG9jZWFufGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=800&q=60',
-    },
-    {
-      id: 12,
-      img: 'https://images.unsplash.com/photo-1542262868-cec49cce6571?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fG9jZWFufGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=800&q=60',
-    },
-  ];
-  
-
+const imageabout = () => {
   return (
-    <>
-      <div className='relative flex items-center bg-gray-200'>
-        <MdChevronLeft
-          className=' bg-gray-200  cursor-pointer '
-          onClick={slideLeft}
-          size={40}
-        />
-        <div
-          id='slider'
-          className='w-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide'
-        >
-          {data.map((item) => (
-            <div
-              key={item.id}
-              className=' inline-block p-2 cursor-pointer hover:scale-105 ease-in-out duration-300 scrollbar-hide'
-            >
-              <Image
-                src={item.img}
-                alt=''
-                width={800} 
-                height={600}
-              />
-            </div>
-          ))}
+    <div id="gallery" className="relative w-full" data-carousel="slide">
+      <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
+        <div className="hidden duration-700 ease-in-out" data-carousel-item>
+          <img
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
+            className="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt=""
+          />
         </div>
-        <MdChevronRight
-          className='bg-gray-200 cursor-pointer'
-          onClick={slideRight}
-          size={40}
-        />
+        <div
+          className="hidden duration-700 ease-in-out"
+          data-carousel-item="active"
+        >
+          <img
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
+            className="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt=""
+          />
+        </div>
+        <div className="hidden duration-700 ease-in-out" data-carousel-item>
+          <img
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
+            className="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt=""
+          />
+        </div>
+        <div className="hidden duration-700 ease-in-out" data-carousel-item>
+          <img
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
+            className="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt=""
+          />
+        </div>
+        <div className="hidden duration-700 ease-in-out" data-carousel-item>
+          <img
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg"
+            className="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt=""
+          />
+        </div>
       </div>
-      <style jsx global>{`
-        /* Hide scrollbar for Firefox */
-        .scroll::-webkit-scrollbar {
-          width: 0;
-        }
-
-        /* Hide scrollbar for Webkit-based browsers */
-        .scroll::-webkit-scrollbar {
-          width: 0;
-        }
-      `}</style>
-    </>
+      <button
+        type="button"
+        className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-prev
+      >
+        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg
+            className="w-4 h-4 text-white dark:text-gray-800"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 6 10"
+          >
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 1 1 5l4 4"
+            />
+          </svg>
+          <span className="sr-only">Previous</span>
+        </span>
+      </button>
+      <button
+        type="button"
+        className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-next
+      >
+        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg
+            className="w-4 h-4 text-white dark:text-gray-800"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 6 10"
+          >
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="m1 9 4-4-4-4"
+            />
+          </svg>
+          <span className="sr-only">Next</span>
+        </span>
+      </button>
+    </div>
   );
 };
 
-export default App;
+export default imageabout;
