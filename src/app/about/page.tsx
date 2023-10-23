@@ -10,7 +10,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className="bg-[#FDFEFF] overflow-x-hidden">
+    <div className="bg-black overflow-x-hidden">
             <Hero />
             <Testomonial /> 
             <Content />

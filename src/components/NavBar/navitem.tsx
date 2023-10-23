@@ -29,9 +29,9 @@ const NavigationItem = ({
         
           className={classNames(
             isActive
-              ? "font-bold text-white border-b-2 border-white"
-              : "font-medium text-white",
-            "md:underlined relative block whitespace-nowrap text-3xl transition md:text-lg"
+              ? "font-bold text-white "
+              : "font-medium text-gray-400",
+            "relative block text-3xl transition md:text-lg"
           )}
         >
           {title}

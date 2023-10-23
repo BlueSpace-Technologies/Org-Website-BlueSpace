@@ -1,7 +1,7 @@
 const Hero = () => {
     return (
         <main>
-            <div className=" w-fullbg lg:min-w-full   md:p-[50px] overflow-hidden ">
+            <div className=" w-full bg-black lg:min-w-full   md:p-[50px] ">
         <div className="flex  items-start  lg:pl-[100px] w-full sm:mx-auto lg:mt-8">
         <h1 className="font-unisans font-bold text-white text-3xl ml-4 lg:text-6xl mt-0 text-start sm:text-5xl">
             A full-service digital 

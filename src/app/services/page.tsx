@@ -3,7 +3,7 @@ import BRAND from "@/components/brand/brand"
 import INDUSTRY from "@/components/industry/industry"
 export default function Home() {
   return (
-    <div className="bg-[#0c0c0c] overflow-x-hidden">
+    <div className="bg-black">
       <Hero />
       <main>
         <BRAND />

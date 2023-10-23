@@ -64,7 +64,7 @@ export const Header = () => {
 
   return (
     <Headroom style={{ zIndex: 50 }}>
-      <header className="relative z-50 py-8 backdrop-blur-md bg-black">
+      <header className="relative z-50 py-8  bg-black">
         <Container>
           <div className="flex justify-between items-center">
             <Logo />

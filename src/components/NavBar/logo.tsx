@@ -14,10 +14,10 @@ const Logo = ({ hideName }: LogoProps) => {
      
         <Image
           src="/logo.png"
-          width={500}
-          height={85}
+          width={1280}
+          height={461}
           alt="logo"
-          className="h-12 w-56"
+          className="h-25 w-56"
           
         
         />

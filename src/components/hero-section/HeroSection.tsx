@@ -18,7 +18,7 @@ const HeroSection = () => {
           <span className="hidden lg:inline">
             <br />
           </span>
-          and UX UI design agency
+          and UX design, Website , App dev agency
         </h1>
       </section>
 

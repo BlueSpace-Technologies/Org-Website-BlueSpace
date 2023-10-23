@@ -90,7 +90,7 @@ const HeroAbout: React.FC = () => {
       transition={{ duration: 0.5 }}
       className=" w-full flex flex-col md:flex-row mt-32 justify-evenly"
     >
-      <div className="flex px-7 lg:flex-row lg:p-10 md:flex-row items-start">
+      <div className="flex px-5 lg:flex-row lg:p-10 md:flex-row items-start">
         <h1 className=" max-w-2xl text-2xl text-white font-semibold font-unisans mb-4 sm:text-1xl lg:text-4xl">
           Based in Mumbai, we strengthen brands through exceptional digital
           experiences for companies world wide.
