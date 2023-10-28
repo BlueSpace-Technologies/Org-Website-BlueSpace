@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 
-
 const imageabout = () => {
   return (
     <div id="gallery" className="relative w-full" data-carousel="slide">
