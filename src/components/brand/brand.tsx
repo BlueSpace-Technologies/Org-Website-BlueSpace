@@ -46,9 +46,7 @@ const Section: React.FC<Section> = ({ title, text, list, image }) => (
       <h2 className="font-unisans text-4xl sm:text-5xl md:text-6xl text-white text-center mb-4">
         {title}
       </h2>
-      <p className="text-lg text-white font-unisans mb-8 text-center">
-        {text}
-      </p>
+      <p className="text-lg text-white font-unisans mb-8 text-center">{text}</p>
       <ul className="space-y-2 text-white font-unisans">
         {list.map((item, index) => (
           <li key={index} className="border-b border-gray-200 py-2">
@@ -58,11 +56,14 @@ const Section: React.FC<Section> = ({ title, text, list, image }) => (
       </ul>
     </div>
     <div>
-      <img src={image} alt={title} className="w-full h-auto" />
+      <Image
+        
+        width={1280}
+        height={461}
+       src={image} alt={title} className="w-full h-auto" />
     </div>
   </div>
 );
-
 const Brand: React.FC = () => (
   <div className=" w-full p-10 sm:p-28 ">
     {sections.map((section, index) => (
