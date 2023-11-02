@@ -1,5 +1,4 @@
 import React from 'react';
-import './industries.css'; // Import your CSS file
 
 // ... Rest of your component code
 
