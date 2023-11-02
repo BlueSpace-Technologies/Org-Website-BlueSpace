@@ -56,17 +56,17 @@ const industriesData = {
 const Industries = () => {
   return (
     <div className="bg-gray-700 py-16 px-10">
-      <div className="font-unisans px-4 p-5 text-white text-3xl font-semibold lg:text-6xl mt-0 text-start sm:text-4xl">
+      <div className="font-unisans px-4 p-5 text-white text-7xl font-semibold lg:text-6xl mt-0 text-start sm:text-4xl">
         <h1>Industries</h1>
       </div>
-      <p className="font-unisans text-white lg:text-3xl sm:text-1xl p-5">
+      <p className="font-unisans  text-2xl text-white lg:text-3xl sm:text-1xl p-5">
         We unite with big brands and startups in various industries to create award-winning work.
       </p>
       <div className="grid-container">
         {industriesData.industries.map((industry, index) => (
           <div className="industry-section" key={index}>
-            <div className="text-white text-2xl lg:text-4xl font-semibold p-3">{industry.name}</div>
-            <div className="text-white p-4 text-2xl sm:text-xl">{industry.description}</div>
+            <div className="text-white text-4xl lg:text-4xl font-semibold p-3">{industry.name}</div>
+            <div className="text-gray-400 p-4 text-xl sm:text-lg">{industry.description}</div>
           </div>
         ))}
       </div>

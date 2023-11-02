@@ -43,7 +43,7 @@ const Contact = () => {
         <div className=" flex mt-10 ">
           <div className="w-full md:w-1/2 p-3 text-white ml-6 underline underline-offset-8 ">
             <h2 className="text-2xl font-light text-white">
-              300 Broadway, San Francisco, CA 941113
+              Mumbai, Maharashtra
             </h2>
            
           </div>
