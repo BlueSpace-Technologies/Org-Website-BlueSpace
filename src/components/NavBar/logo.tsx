@@ -17,7 +17,7 @@ const Logo = ({ hideName }: LogoProps) => {
           width={1280}
           height={461}
           alt="logo"
-          className="h-25 w-56"
+          className=" h-28 w-64"
           
         
         />
