@@ -10,10 +10,6 @@ const industriesData = {
       description: "Discover, Stripe, CreditKarma, STC Bank, MoneyLion, Marqeta, Quicken, Lulo Bank, Earnin, Fundbox, StreetBeat, Q2"
     },
     {
-      name: "Crypto & Web3",
-      description: "Coinbase, MEXC, DFINITY, Ndax, Aurox, Alliance Block"
-    },
-    {
       name: "Technology",
       description: "Google, Amazon, Snapchat, Facebook, Cisco, Speedtest.net"
     },
@@ -26,24 +22,8 @@ const industriesData = {
       description: "Sony, Sandisk, Western Digital, Oppo, Corsair, Samsung, XGIMI, Fossil"
     },
     {
-      name: "Food & Beverage",
-      description: "Coca-Cola, IMPOSSIBLE, Joe & The Juice, JOKR, Reyes Holdings"
-    },
-    {
       name: "Startups & VC",
       description: "Fiverr, Superhuman, SendGrid, Clearbit, Onfido, Rapid Robotics, Wealth"
-    },
-    {
-      name: "Healthcare & Life Sciences",
-      description: "Medidata, Medable, Hint, Endpoint, Neurolign, Quartzy"
-    },
-    {
-      name: "Telecommunications",
-      description: "T-Mobile, C-Spire, Huawei"
-    },
-    {
-      name: "Mobility",
-      description: "Uber, Toyota, Nauto"
     },
     {
       name: "Logistics",
