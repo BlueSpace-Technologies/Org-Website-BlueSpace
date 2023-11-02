@@ -8,6 +8,7 @@ import WorkShowcase from "./WorkshowcasePARTONE";
 import FAQS from "../FAQ/faq";
 import ImageRepeat from "./Imagesection";
 import WorkShowcases from "./Sencodeworkshowcase";
+import DesignsG from "../imagegallery/gallerydesign";
 
 const HeroSection = () => {
   return (
@@ -18,7 +19,7 @@ const HeroSection = () => {
           <span className="hidden lg:inline">
             <br />
           </span>
-          and UX UI design agency
+          and UX design, Website , App dev agency
         </h1>
       </section>
 
@@ -26,15 +27,9 @@ const HeroSection = () => {
 
       <HeroAbout />
 
-      <ImageRepeat count={8} />
+      <ImageRepeat count={4} />
 
-      <div className="flex justify-center mt-28 text-2xl sm:text-4xl md:text-5xl lg:text-3xl items-center transform hover:scale-105 transition-transform px-4 sm:px-8 md:px-12 xl:px-16">
-        <div className="">
-          <h3 className="text-white underline text-xl text-center sm:text-left font-bold lg:text-2xl">
-            View all Clients
-          </h3>
-        </div>
-      </div>
+      <DesignsG />
 
       <WorkShowcase />
       <WorkShowcases />

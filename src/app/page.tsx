@@ -36,7 +36,6 @@ export default function Home() {
           </h1>
         </div>
       </section>
-      <FAQS />
     </main>
   );
 }

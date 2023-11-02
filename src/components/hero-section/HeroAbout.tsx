@@ -3,7 +3,6 @@ import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/20/solid";
 import { motion } from "framer-motion";
 
-// Define your DisclosureItem component with TypeScript
 interface DisclosureItemProps {
   title: string;
   content: string;
@@ -21,7 +20,7 @@ const DisclosureItem: React.FC<DisclosureItemProps> = ({
     <div className="overflow-hidden">
       <Disclosure.Button
         onClick={toggleDisclosure}
-        className="flex items-center justify-start w-full py-5 text-xl font-unisans text-white bg-black rounded-lg  focus-visible:ring focus-visible:ring-white focus-visible:ring-opacity-75 transition duration-300 ease-in-out"
+        className="flex items-center py-3 justify-start w-full text-xl font-unisans text-white bg-black rounded-lg  focus-visible:ring focus-visible:ring-white focus-visible:ring-opacity-75 transition duration-300 ease-in-out"
       >
         <span className="text-start font-bold sm:text-1xl lg:text-4xl">
           {title}
@@ -88,32 +87,28 @@ const HeroAbout: React.FC = () => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -50 }}
       transition={{ duration: 0.5 }}
-      className=" w-full flex flex-col md:flex-row mt-32 justify-evenly"
+      className=" w-full flex flex-col md:flex-row mt-16 justify-evenly"
     >
-      <div className="flex px-7 lg:flex-row lg:p-10 md:flex-row items-start">
+      <div className="flex px-5 lg:flex-row lg:p-10 md:flex-row items-start">
         <h1 className=" max-w-2xl text-2xl text-white font-semibold font-unisans mb-4 sm:text-1xl lg:text-4xl">
           Based in Mumbai, we strengthen brands through exceptional digital
           experiences for companies world wide.
         </h1>
       </div>
 
-      <div className=" max-w-xl p-3 py-7 w-full md:w-1/2 px-4 mt-8 md:mt-0">
-        <div className="w-full   p-5items-center max-w-4xl rounded-xl bg-black">
+      <div className=" max-w-xl  w-full md:w-1/2 px-4 mt-8 md:mt-0">
+        <div className="w-full max-w-4xl rounded-xl bg-black">
           {disclosures.map((item, index) => (
             <Disclosure key={index}>
               {({ open }) => (
-                <motion.div
-                  initial={{ opacity: 0, y: -10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
-                >
+               
                   <DisclosureItem
                     title={item.title}
                     content={item.content}
                     isOpen={open && openDisclosure[index]}
                     toggleDisclosure={() => toggleDisclosure(index)}
                   />
-                </motion.div>
+             
               )}
             </Disclosure>
           ))}

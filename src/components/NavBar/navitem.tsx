@@ -24,25 +24,20 @@ const NavigationItem = ({
   const isActive = pathname === href; // Check if the current path exactly matches the href.
 
   return (
-    <motion.li
-      variants={variants}
-      initial={initial}
-      animate={animate}
-      custom={customDelay}
-    >
+  
       <Link href={href}
         
           className={classNames(
             isActive
-              ? "font-bold text-white border-b-2 border-white"
-              : "font-medium text-white",
-            "md:underlined relative block whitespace-nowrap text-3xl transition md:text-lg"
+              ? "font-bold text-white "
+              : "font-medium text-gray-400",
+            "relative block text-3xl transition md:text-lg"
           )}
         >
           {title}
     
       </Link>
-    </motion.li>
+
   );
 };
 

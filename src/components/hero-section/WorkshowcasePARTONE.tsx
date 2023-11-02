@@ -3,12 +3,12 @@ import Image from "next/image";
 
 const WorkShowcase = () => {
   return (
-    <section className="py-20 px-4 bg-black">
-      <div className="flex flex-col lg:flex-row sm:flex md:flex-row xl:flex-row  justify-evenly">
-        <div>
+    <section className=" px-4 sm:py-4 sm:px-4 bg-black">
+      <div className="flex flex-col py-10 sm:flex-row sm:justify-evenly justify-evenly gap-8">
+        <div className="relative aspect-w-16 aspect-h-9 group">
           <video
             poster="https://cdn.sanity.io/images/r115idoc/production/3b4132739409b27731583066a5ea88091a7b4935-1700x954.png?q=90&auto=format"
-            className="hover:scale-105 sm:p-20 transform transition-transform duration-300 ease-in-out"
+            className="object-cover object-center bg-emerald-50 w-full h-full hover:scale-105 transform transition-transform duration-300 ease-in-out group-hover:border border-white"
             autoPlay
             loop
             muted
@@ -18,18 +18,17 @@ const WorkShowcase = () => {
               type="video/mp4"
             />
           </video>
-          <h1 className=" text-white py-6 sm:p-20 font-unisans text-2xl ">CASE 1</h1>
-          <p className="text-white font-unisans">
-            hello donw wrojfdfsdfsdffsdfsdfdsfsdfsd
-          </p>
-          <Link href={""} className=" text-white text-1xl font-unisans">
-            View case study
-          </Link>
+          <div className="py-6 ">
+            <div className="mt-2 text-white text-2xl font-unisans">Video 2 Title</div>
+            <p className="text-gray-400 font-unisans">Video 2 Description</p>
+          </div>
         </div>
-        <div>
+
+        {/* Video 2 */}
+        <div className="relative aspect-w-16 aspect-h-9 group">
           <video
             poster="https://cdn.sanity.io/images/r115idoc/production/3b4132739409b27731583066a5ea88091a7b4935-1700x954.png?q=90&auto=format"
-            className="hover:scale-105 sm:p-20 transform transition-transform duration-300 ease-in-out"
+            className="object-cover object-center w-full h-full hover:scale-105 transform transition-transform duration-300 ease-in-out group-hover:border border-white"
             autoPlay
             loop
             muted
@@ -39,36 +38,34 @@ const WorkShowcase = () => {
               type="video/mp4"
             />
           </video>
-          <h1 className=" text-white py-6 font-unisans text-2xl ">CASE 1</h1>
-          <p className="text-white font-unisans">
-            hello donw wrojfdfsdfsdffsdfsdfdsfsdfsd
-          </p>
-          <Link href={""} className=" text-white text-1xl font-unisans">
-            View case study
-          </Link>
+          <div className="py-6 ">
+            <div className="mt-2 text-white text-2xl font-unisans">Video 2 Title</div>
+            <p className="text-gray-400 font-unisans">Video 2 Description</p>
+          </div>
         </div>
       </div>
-      <div className="flex py-52 flex-row lg:flex lg:p-20 sm:flex md:flex">
-        <div>
-          <video
-            poster="https://cdn.sanity.io/images/r115idoc/production/3b4132739409b27731583066a5ea88091a7b4935-1700x954.png?q=90&auto=format"
-            className="hover:scale-105 sm:p-20 transform transition-transform duration-300 ease-in-out"
-            autoPlay
-            loop
-            muted
-          >
-            <source
-              src="https://cdn.sanity.io/files/r115idoc/production/b93de3c461d165c7178ec3e3f7ac7fe04756fe20.mp4"
-              type="video/mp4"
-            />
-          </video>
-          <h1 className=" text-white py-6 font-unisans text-2xl ">CASE 1</h1>
-          <p className="text-white font-unisans">
-            hello donw wrojfdfsdfsdffsdfsdfdsfsdfsd
-          </p>
-          <Link href={""} className=" text-white text-1xl font-unisans">
-            View case study
-          </Link>
+
+      {/* Video 3 */}
+      <div className="flex flex-col sm:flex-row md:flex-row py-11 lg:py-20">
+        <div className="w-full">
+          <div className="relative aspect-w-16 aspect-h-9 group">
+            <video
+              poster="https://cdn.sanity.io/images/r115idoc/production/3b4132739409b27731583066a5ea88091a7b4935-1700x954.png?q=90&auto=format"
+              className="object-cover object-center w-full h-full hover:scale-105 transform transition-transform duration-300 ease-in-out group-hover:border border-white"
+              autoPlay
+              loop
+              muted
+            >
+              <source
+                src="https://cdn.sanity.io/files/r115idoc/production/b93de3c461d165c7178ec3e3f7ac7fe04756fe20.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+          <div className="py-6 ">
+            <div className="mt-2 text-white text-2xl font-unisans">Video 2 Title</div>
+            <p className="text-gray-400 font-unisans">Video 2 Description</p>
+          </div>
         </div>
       </div>
     </section>
